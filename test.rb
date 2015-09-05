@@ -1,4 +1,9 @@
 #!/usr/bin/ruby
 
-puts 'Hello, and welcome to 8th grade English.'
-puts 'My name is Ms. Schlesinger. Your name is...?'
+puts "I'm going to count from 1 to 10."
+
+10.downto(1) do |i|
+  puts i
+end
+
+puts "See, I told you!"
