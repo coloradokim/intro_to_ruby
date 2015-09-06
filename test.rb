@@ -1,9 +1,13 @@
 #!/usr/bin/ruby
 
-puts "I'm going to count from 1 to 10."
-
-10.downto(1) do |i|
-  puts i
+puts 'Speak on it to grandmama!'
+command = ()
+while command != 'BYE'
+    command = gets.chomp
+    if command != command.upcase
+        puts "HUH?! SPEAK UP, DEAR!"
+    else
+        year = "19"+rand(30..50).to_s
+        puts "NO, NOT SINCE #{year}!"
+    end
 end
-
-puts "See, I told you!"
