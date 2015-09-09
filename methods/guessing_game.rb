@@ -10,3 +10,15 @@ the program should print the number of guesses needed to arrive at the correct a
 =end
 
 puts "Guess a number between 1 and 100"
+i = 0
+number_target = rand(1..100)
+number_guess = gets.chomp.to_i
+
+while
+  number_target > number_guess
+  puts "The number is greater than #{number_guess}."
+  puts "Guess again."
+end
+# while number_target < number_guess
+#   puts "The number is less than #{number_guess}."
+#   i +=
